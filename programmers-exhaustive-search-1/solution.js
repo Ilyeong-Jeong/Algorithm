@@ -21,7 +21,7 @@ function solutionFirst(answers) {
 
   const answer = answerTotal.map((v, i) => {
     if (v === max) return i + 1;
-  }).filter(x => x)
+  }).filter((x) => x)
 
   return answer;
 }
