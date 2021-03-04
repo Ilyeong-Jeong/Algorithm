@@ -1,4 +1,15 @@
-const solution = (participant, completion) => {
+function solutionFirst(participant, completion) {
+  participant.sort();
+  completion.sort();
+    
+  const failure = participant.find((v, i) => {
+    if (v !== completion[i]) return v;
+  });
+
+  return failure;
+}
+
+const solutionSecond = (participant, completion) => {
   participant.sort();
   completion.sort();
   
